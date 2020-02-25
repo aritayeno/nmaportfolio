@@ -1,0 +1,22 @@
+// VARIABLES
+$heading-fontfamily: 'garamond-premier-pro', serif;
+$body-fontfamily: 'avenir', sans-serif;
+
+// COLOR
+$color-text-body: black;
+$color-navigation: #BF8D7A;
+$color-previous: #2D4010;
+$color-next: #1E5069;
+
+// BREAKPOINTS
+$breakpoint-small: 768px;
+$breakpoint-medium: 1050px;
+$breakpoint-large: 1250px;
+
+// IMPORT PARTIALS
+@import "partials/structure";
+@import "partials/layout";
+@import "partials/grid";
+@import "partials/typography";
+@import "partials/buttons";
+@import "partials/media";
