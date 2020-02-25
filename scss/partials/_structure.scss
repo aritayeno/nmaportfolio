@@ -1,0 +1,27 @@
+// SITE HEADER
+// SITE FOOTER
+// SITE-NAV
+.site-header .site-nav {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+}
+
+.site-footer .site-nav {
+    ul {
+        display: flex;
+        list-style: none;
+    }
+
+    a {
+        display: block;
+        padding: 1em;
+    }
+}
