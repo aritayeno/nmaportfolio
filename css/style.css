@@ -19,3 +19,16 @@
 .site-footer .site-nav a {
   display: block;
   padding: 1em; }
+
+body {
+  font-family: "avenir", sans-serif;
+  font-size: 100%;
+  color: black; }
+
+h1 {
+  font-family: "garamond-premier-pro", serif;
+  font-weight: 700; }
+
+h2 {
+  font-family: "avenir", sans-serif;
+  font-weight: 300; }
