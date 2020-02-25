@@ -1,20 +1,20 @@
-.site-header .site-nav {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  display: -ms-grid;
-  display: grid;
-  place-items: center; }
-  .site-header .site-nav ul {
-    list-style: none;
-    padding: 0; }
+.site-header .site-nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right; }
+
+.site-header .site-nav a {
+  display: block;
+  padding: 1em; }
 
 .site-footer .site-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style: none; }
+  list-style: none;
+  float: center; }
 
 .site-footer .site-nav a {
   display: block;

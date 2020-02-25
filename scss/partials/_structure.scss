@@ -2,15 +2,15 @@
 // SITE FOOTER
 // SITE-NAV
 .site-header .site-nav {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    display: grid;
-    place-items: center;
     ul {
         list-style: none;
-        padding: 0;
+        display: flex;
+        float: right;
+    }
+
+    a {
+        display: block;
+        padding: 1em;
     }
 }
 
@@ -18,6 +18,7 @@
     ul {
         display: flex;
         list-style: none;
+        float: center;
     }
 
     a {
