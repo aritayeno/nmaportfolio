@@ -25,6 +25,20 @@
         #SITE NAVIGATION
             #TOGGLE-NAV (Default for Small Screens)
 --------------------------------- */
+html{
+  box-sizing: border-box;
+}
+
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+
 /* #HTML5 */
 header,
 section,
@@ -886,4 +900,32 @@ display: inline-block;
   display: flex;
   justify-content: space-between;
   
+}
+
+
+footer{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.site-nav{
+  width: fit-content;
+  display: flex;
+}
+
+
+.project-nav-link a{
+  display: flex;
+  align-items: center;  
+}
+
+.project-nav-link a p{
+  margin: 0 10px;
+}
+
+.project-nav-link.next a{
+  flex-direction: row-reverse;
 }
