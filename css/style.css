@@ -263,6 +263,7 @@ body {
 }
 .row > .column.one-half {
   width: 48%;
+
 }
 .row > .column.one-third {
   width: 31.3333%;
@@ -425,7 +426,7 @@ main { padding: 2em 0;}
 
 section {
   margin-top: 4em;
-  margin-bottom: 4em;
+  margin-bottom: 2em;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -595,8 +596,8 @@ body {
 }
 
 .text-centered .row{
-justify-content: space-between;
-display: flex;
+  justify-content: space-between;
+  display: flex;
 }
 
 .text-centered a{
@@ -617,14 +618,24 @@ display: flex;
 }
 
 /* LOGOS */
-.logos .row {
+.logos .branding .other .row {
   justify-content: space-between;
   align-items: center;
+  padding-right: 40px;
+  padding-left: 40px;
 }
-.logos .img {
-  max-width: 300px;
+.logos img {
+  max-width: 11em;
   height: auto;
 }
+.branding img {
+  max-width: 14em;
+  height: auto;
+}
+.other {
+  font-size: 0.8em;
+}
+
 .mah_hero, .tunis_hero, .gibraltar_hero, .gb_hero, .up_hero, .misc_hero {
   margin-top: 0em;
 }
@@ -658,10 +669,14 @@ display: flex;
   justify-content: space-between;
 }
 
+.mahcolorschemes img {
+  min-height: 2vh;
+}
+
 .one-half.column img{
-display: flex;
-margin-left: auto;
-margin-right: auto;
+  display: flex;
+  padding: 1em;
+  margin: 1em;
 }
 
 /* TUNIS LOGO */
@@ -729,8 +744,8 @@ display: inline-block;
 .gibraltarvariations .row {
   display: flex;
   justify-content: space-between;
-  
 }
+
 
 /* GO BANANAS */
 .gb_hero img {
@@ -790,8 +805,6 @@ display: inline-block;
   .kcc {
     color: #20419A;
   }
-
-
 
 /* URBAN PACIFIC */
 
