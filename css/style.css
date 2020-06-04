@@ -612,38 +612,121 @@ body {
   margin-bottom: 2em;
 }
 
-.wufoo input.text,
-.wufoo textarea.textarea {
-  padding: 1em;
-}
 
 /* LOGOS */
-.logos .branding .other .row {
-  justify-content: space-between;
-  align-items: center;
-  padding-right: 40px;
-  padding-left: 40px;
-}
-.logos img {
+
+.works{
+  display: grid;
+  grid-template-columns: repeat(6 1fr);
+  grid-gap: 50px;
+  place-items: center;
+  grid-template-areas: 
+  ". mah_works mah_works tunis_works tunis_works ."
+  ". gb_works gb_works spices_works spices_works ."
+  ". intern_works intern_works misc_works misc_works .";}
+
+  .works .mah_works{
+    grid-area: mah_works;
+  }
+
+  .works .tunis_works{
+    grid-area: tunis_works;
+  }
+
+  .works .gb_works{
+    grid-area: gb_works;
+  }
+
+  .works .spices_works{
+    grid-area: spices_works;
+  }
+
+  .works .intern_works{
+    grid-area: intern_works;
+  }
+
+  .works .misc_works{
+    grid-area: misc_works;
+  }
+
+  .works a:hover{
+    border-bottom: 10px solid green ;
+    transition: all .2s ease;
+  }
+
+.mah_works img, .tunis_works img {
   max-width: 11em;
   height: auto;
 }
-.branding img {
+.gb_works img, .spices_works img {
   max-width: 14em;
   height: auto;
 }
-.other {
-  font-size: 0.8em;
+
+.works h2{
+  text-align: center;
 }
 
-.mah_hero, .tunis_hero, .gibraltar_hero, .gb_hero, .up_hero, .misc_hero {
-  margin-top: 0em;
+@media (max-width: 768px){
+  .works{
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+    grid-gap: 50px;
+    place-items: center;
+    grid-template-areas: 
+    ". mah_works mah_works ."
+    ". tunis_works tunis_works ."
+    ". gb_works gb_works ."
+    ". spices_works spices_works ."
+    ". intern_works intern_works ."
+    ". misc_works misc_works .";
+  }
+  
+    .works .mah_works{
+      grid-area: mah_works;
+    }
+  
+    .works .tunis_works{
+      grid-area: tunis_works;
+    }
+  
+    .works .gb_works{
+      grid-area: gb_works;
+    }
+  
+    .works .spices_works{
+      grid-area: spices_works;
+    }
+  
+    .works .intern_works{
+      grid-area: intern_works;
+    }
+  
+    .works .misc_works{
+      grid-area: misc_works;
+    }
+    .mah_works img, .tunis_works img {
+    max-width: 11em;
+    height: auto;
+  }
+  .gb_works img, .spices_works img {
+    max-width: 14em;
+    height: auto;
+  }
+  
+  .works h2{
+    text-align: center;
+  }
 }
+
 /* MUSICIANSʻ ASSOCIATION OF HAWAII */
-.mah_hero img {
-  margin: 0 auto;
-  margin-top: 2em;
-  margin-bottom: 0em;
+.mah_hero img{
+  margin:0 auto;
+  padding: 2em;
+}
+
+.solution img, .solution p {
+  margin-top: 1em;
 }
 .mah_hero h1 {
   font-family: "freight-text-pro", sans-serif;
@@ -675,8 +758,6 @@ body {
 
 .one-half.column img{
   display: flex;
-  padding: 1em;
-  margin: 1em;
 }
 
 /* TUNIS LOGO */
@@ -729,7 +810,7 @@ display: inline-block;
   padding: 0 0;
 }
 .gibraltar_hero .row{
-display: inline-block;
+  display: inline-block;
 }
 
 .gibraltar_hero h3{
@@ -746,6 +827,13 @@ display: inline-block;
   justify-content: space-between;
 }
 
+.gibraltarillustrations .one-third.column img{
+  display: flex;
+  align-items: center;
+  /* max-width: 15em; */
+}
+
+/* Comparison Slider */
 
 /* GO BANANAS */
 .gb_hero img {
@@ -786,7 +874,7 @@ display: inline-block;
   font-weight: 700; 
   color: #1e5069;
   font-size: 3em;
-  margin-top: 2em;
+  margin-top: 0em;
   margin-bottom: 0;
   padding: 0 0;
 }
@@ -817,7 +905,6 @@ display: inline-block;
   color: #ea0222;
   text-align: center;
 }
-
 .upvariations .row {
   display: flex;
   justify-content: space-between;
@@ -827,21 +914,18 @@ display: inline-block;
   color: #36b3a8;
 }
 
-/* MISCELLANEOUS */
-.misc_hero img {
-  margin: 0 auto;
-  margin-top: 5em;
-  margin-bottom: 3em;
-  height: auto;
-  width: 20em;
+.upwork, .upwork h2{
+  margin-top: 0;
 }
+
+/* MISCELLANEOUS */
 
 .miscprojects h1 {
   font-family: "freight-text-pro", sans-serif;
   font-weight: 700; 
   color: #768C46;
   font-size: 3em;
-  margin-top: 2em;
+  margin-top: 1em;
   margin-bottom: 0;
   padding: 0 0;
   text-align: left;
@@ -901,7 +985,7 @@ display: inline-block;
 }
 
 .footer-projects {
-  margin-top: 10em;
+  margin-top: 6em;
 }
 
 .footer-projects ul {
@@ -939,4 +1023,15 @@ display: inline-block;
   content: "";
   display: table;
   clear: both;
+}
+
+hr {
+  margin-top: 4em;
+  margin-bottom: 5em;
+  border: 0;
+  clear: both;
+  display: block; 
+  width: 100%;
+  height: 1px;
+ background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); 
 }
