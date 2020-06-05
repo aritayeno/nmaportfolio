@@ -14,6 +14,7 @@
 
     <!-- MAIN CSS FILE -->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -31,21 +32,23 @@
     </header>
 
     <main>
-        <div class="container">
+        <div class="container solution">
             <section class="tunis_hero">
                 <img src="media/TunisLogo_ColorTrans_300.png" alt="Tunis Logo" />
-                <h1>Tunis</h1>
+                <h1>TUNIS</h1>
                 <span class="design_format">Logo</span>
                 <h3>The Goal</h3>
                 <h2>Design a logo for Tunis to reflect it's history and culture.</h2>
 
-                <div class="row">
+                <div class="row solution">
                     <div class="one-half column">
                         <h3>The Solution</h3>
                         <p>Jasmine—the national flower of Tunisia, is the focal point of this logo. The lines surrounding the flower respresent the ripple-effect caused by the outcome of the Tunisian Revolution. The subtle colors mimic mosaic art—Tunisia's most well-known art form.</p>
                     </div>
                 </div>
             </section>
+
+            <hr>
 
         </div>
         <!-- <div class="container">
@@ -85,11 +88,15 @@
                 <div class="row">
                     <div class="one-half column">
                         <h4>round 1</h4>
-                        <img src="media/TunisLogo_ColorScheme-04.png" alt="Color Scheme Version One" />
+                        <a href="media/TunisLogo_ColorScheme-04.png" data-fancybox>
+                            <img src="media/TunisLogo_ColorScheme-04.png" alt="Color Scheme Version One" />
+                        </a>
                     </div>
                     <div class="one-half column">
                         <h4>round 2</h4>
-                        <img src="media/TunisLogo_ColorScheme-05.png" alt="Color Scheme Version Twor" />
+                        <a href="media/TunisLogo_ColorScheme-05.png" data-fancybox>
+                            <img src="media/TunisLogo_ColorScheme-05.png" alt="Color Scheme Version Two" />
+                        </a>
                     </div>
                 </div>
             </section>
@@ -123,6 +130,8 @@
 
     <!-- MAIN JS -->
     <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 </body>
 
 </html>
