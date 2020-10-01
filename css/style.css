@@ -153,50 +153,22 @@ button {font-size: inherit;}
 button,
 a.button {
   text-transform: uppercase;
+  font-family: le-havre, sans-serif;
+  font-weight: 400;
   letter-spacing: 0.15em;
-  font-size: 80%;
-  display: inline-block;
-  background-color: #bbb;
-  border: 1px solid #bbb;
-  color: #fff;
-  padding: 0.8em 1em 0.65em 1em;
+  background-color: #e2a83c; 
+  color: white;
+  padding: 1.5em;
   -webkit-border-radius: 0.32em;
   -moz-border-radius: 0.32em;
   border-radius: 0.32em;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-top: 1em;
+  margin-bottom: 3em;
   border: none;
   cursor: pointer;
-  line-height: 1em;
+  line-height: 1.5em;
   transition: all ease-in-out 0.4s;
-}
-
-button.alt,
-a.button.alt {
-  background-color: rgba(255, 255, 255, 0);
-  border: 0.05em solid #dedede;
-  color: #bbb;
-}
-
-button:hover,
-a.button:hover,
-button.active:hover,
-a.button.active:hover {
-  background-color: #bbb;
-  color: #fff;
-  border-color: #bbb;
-  text-decoration: none;
-}
-
-button:focus,
-a.button:focus {
-  outline: none;
-}
-
-button.active,
-a.button.active {
-  background-color: #f5f5f5;
-  border-color: #bbb;
+  
 }
 
 /* #IMAGES */
@@ -213,10 +185,6 @@ img {
   #LARGE+ (Desktop) - min-width: 1150px
   
 /* SMALL+ (Mobile First Defaults) */
-body {
-  margin: 0;
-  padding: 0;
-}
 
 .container {
   max-width: 800px;
@@ -370,7 +338,6 @@ body {
 }
 
 .site-header h1 a {
-  /* color: rgba(0, 0, 0, 0.5); */
   color: #BF8D7A;
   padding: 1em;
   display: inline-block;
@@ -444,106 +411,6 @@ section {
   display: grid;
   align-items: center;
   justify-content: center;
-}
-
-/* FORMS */
-form {
-  margin: 1.75em 0;
-}
-
-form label {
-  display: block;
-}
-
-form input,
-form textarea {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1em;
-  line-height: 1.15em;
-  display: block;
-  margin-bottom: 1.25em;
-  width: 100%;
-  color: #666;
-  padding: 0.25em;
-  border: 1px solid #ccc;
-}
-
-form textarea {
-  border: 1px solid #ccc;
-  min-height: 6em;
-}
-
-form input[type="button"],
-form input[type="submit"],
-form input[type="reset"] {
-  width: auto;
-  background-color: #39c;
-  border: 1px solid #39c;
-  color: #fff;
-  padding: 0.75em 1em;
-  -webkit-border-radius: 0.32em;
-  -moz-border-radius: 0.32em;
-  border-radius: 0.32em;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-}
-form input[type="button"]:hover,
-form input[type="submit"]:hover,
-form input[type="reset"]:hover {
-  background-color: #069;
-  border-color: #069;
-}
-
-/* Page Fade-ins */
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-main,
-fade-in {
-  opacity: 0;
-  animation: fade-in ease-in-out 1;
-  animation-fill-mode: forwards;
-  animation-duration: 0.5s;
-}
-
-@keyframes fade-and-move-in {
-  from {
-    transform: translate(0, -20px);
-    opacity: 0;
-  }
-  to {
-    transform: translate(0, 0);
-    opacity: 1;
-  }
-}
-
-.fade-and-move-in {
-  opacity: 0;
-  animation: fade-and-move-in ease-out 1;
-  animation-fill-mode: forwards;
-  animation-duration: 0.5s;
-}
-
-.fade-and-move-in:nth-child(1) {
-  animation-delay: 0.1s;
-}
-.fade-and-move-in:nth-child(2) {
-  animation-delay: 0.2s;
-}
-.fade-and-move-in:nth-child(3) {
-  animation-delay: 0.4s;
-}
-.fade-and-move-in:nth-child(4) {
-  animation-delay: 0.7s;
-}
-.fade-and-move-in:nth-child(5) {
-  animation-delay: 1s;
 }
 
 /* #SITE SPECIFIC CUSTOM CSS (e.g. Base Overrides)
@@ -626,6 +493,10 @@ body {
   margin-bottom: 2em;
 }
 
+/* UI_DESIGN */
+#ui_designs{
+ border: 1px solid red;
+}
 
 /* LOGOS */
 
@@ -775,6 +646,13 @@ body {
 .mahsectionheader {
   color: #FEBE85;
   text-align: center;
+}
+
+@media(min-width: 768px){
+#mah_variations img{
+  border: 1px solid red;
+  vertical-align: center;
+}
 }
 
 .mahvariations .row {
