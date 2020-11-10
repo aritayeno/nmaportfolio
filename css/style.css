@@ -650,7 +650,6 @@ body {
 
 @media(min-width: 768px){
 #mah_variations img{
-  border: 1px solid red;
   vertical-align: center;
 }
 }
